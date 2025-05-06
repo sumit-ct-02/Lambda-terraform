@@ -5,15 +5,15 @@ on:
     inputs:
       lambda_name:
         description: 'Lambda Function Name'
-        required: false
+        required: true
 
       s3_bucket:
         description: 'S3 bucket where Lambda deployment package is stored'
-        required: false
+        required: true
 
       s3_key:
         description: 'Name of the Lambda deployment package in S3'
-        required: false
+        required: true
 
       region:
         description: 'AWS region'
