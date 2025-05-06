@@ -9,7 +9,7 @@ terraform {
 }
 
 resource "aws_lambda_function" "my_lambda" {
-  function_name = var.lambda_function_name
+  function_name = var.lambda_name
   handler       = var.lambda_handler
   runtime       = var.runtime
   role          = "arn:aws:iam::730335384723:role/EC2LambdaRole" 
