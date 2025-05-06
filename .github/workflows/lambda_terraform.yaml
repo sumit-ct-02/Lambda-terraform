@@ -51,4 +51,4 @@ jobs:
       run: terraform validate
 
     - name: Terraform Apply
-      run: terraform apply -var lambda_name=${{ github.event.inputs.lambda_name }} -var region=${{ github.event.inputs.region }} -var s3_bucket=${{ github.event.inputs.s3_bucket }} -var s3_key=${{ github.event.inputs.s3_key }} -auto-approve
+      run: terraform apply -var lambda_function_name=${{ github.event.inputs.lambda_name }} -var region=${{ github.event.inputs.region }} -var s3_bucket=${{ github.event.inputs.s3_bucket }} -var s3_key=${{ github.event.inputs.s3_key }} -auto-approve
